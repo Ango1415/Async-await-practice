@@ -11,6 +11,10 @@ async def count():
     await asyncio.sleep(1)
 
 async def main():
+    """
+    Running multiple counting processes concurrently.
+    :return:
+    """
     await asyncio.gather(count(), count(), count())
 
 if __name__ == "__main__":
