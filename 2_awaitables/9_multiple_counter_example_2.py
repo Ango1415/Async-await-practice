@@ -1,6 +1,10 @@
 import asyncio
 
 async def count():
+    """
+    Adding delays to simulate a counting process.
+    :return:
+    """
     print("One")
     await asyncio.sleep(1)
     print("Two")
