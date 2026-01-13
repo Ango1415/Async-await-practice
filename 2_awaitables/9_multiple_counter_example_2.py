@@ -3,7 +3,7 @@ import asyncio
 async def count():
     """
     Adding delays to simulate a counting process.
-    :return:
+    :return: None
     """
     print("One")
     await asyncio.sleep(1)
@@ -13,7 +13,7 @@ async def count():
 async def main():
     """
     Running multiple counting processes concurrently.
-    :return:
+    :return: None
     """
     await asyncio.gather(count(), count(), count())
 
